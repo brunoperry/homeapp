@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('api/', function () {
+   
+	return 'hrllo';
+// return view('welcome');
 });
