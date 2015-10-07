@@ -15,7 +15,12 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        return 'hello blog';
+    }
+
+    public function getBlogs() {
+
+        return 'get blogs';
     }
 
     /**
