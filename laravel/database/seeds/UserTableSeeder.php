@@ -1,4 +1,6 @@
 <?php
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
 
 class UserTableSeeder extends Seeder {
 
@@ -6,17 +8,11 @@ class UserTableSeeder extends Seeder {
 
     DB::table('users')->delete();
 
-    User::create(array(
+    DB::table('users')->insert([
 
-        'username' => 'firstuser',
-        'password' => Hash::make('first_password')
-    ));
-
-    User::create(array(
-
-        'username' => 'brunoperry',
-        'password' => Hash::make('surfada')
-    ));
+	'username' => 'brunperry',
+        'password' => Hash::make('surfada') 
+    ]);
 
   }
 }
